@@ -1,3 +1,54 @@
+:root {
+  --primary-color: #eaefbd;
+  --secondary-color: #c9e3ac;
+  --accent-color-1: #90be6d;
+  --accent-color-2: #ea9010;
+  --bg-color: #37371f;
+  --body-bg-color: #ccd3c3;
+  --form-bg: #ffeddd;
+  
+  --text-shadow: #aaa;
+
+  --black: #000;
+  --white: #fff;
+}
+
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu-items {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-color: var(--secondary-color);
+  margin: 0;
+}
+
+.nav-menu-items li a {
+  text-decoration: none;
+  color: var(--bg-color);
+  font-family: metropolis-bold, sans-serif;
+  font-size: 20px;
+}
+
+.nav-menu-items li a:hover {
+  text-decoration: dotted;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+.main-content-container {
+  padding: 0 20px 40px;
+  margin-top: 30px;
+}
+
 .App {
   text-align: center;
 }
