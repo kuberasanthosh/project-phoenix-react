@@ -28,12 +28,13 @@ const Counter = () => {
   const reset = () => dispatch({ type: "reset" });
 
   return (
-    <div>
+    <div className='counter-container'>
       <h1>Welcome to my counter</h1>
-
       <p>Count: {state.count}</p>
-      <button onClick={addFive}>Add 5</button>
-      <button onClick={reset}>Reset</button>
+      <div>
+        <button type="button" className='primary' onClick={addFive}>Add 5</button>&emsp;
+        <button type="button" className='secondary' onClick={reset}>Reset</button>
+      </div>
     </div>
   );
 }

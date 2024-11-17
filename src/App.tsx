@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import FirstButton from "./pages/FirstButton";
+import ButtonTypes from "./pages/ButtonTypes";
 import Counter from "./pages/Counter";
 import NoPage from "./pages/NoPage";
 import Layout from "./pages/Layout";
@@ -13,7 +13,7 @@ export default function App() {
         <Route path="/" element={<Layout />}>
         <>
           <Route index element={<Home />} />
-          <Route path="firstbutton" element={<FirstButton price="10" style='{"width": "10%", "textAlign": "center", "fontSize": "1.3em"}' />} />
+          <Route path="buttontypes" element={<ButtonTypes btnName="Prop Button" style='{"width": "200px", "textAlign": "center", "fontSize": "1.3em"}' />} />
           <Route path="counter" element={<Counter />} />
           <Route path="*" element={<NoPage />} />
         </>
