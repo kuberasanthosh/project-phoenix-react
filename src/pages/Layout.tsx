@@ -13,7 +13,6 @@ const Layout = () => {
   const linkToggleClass = (e:React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
     e.preventDefault();
     toggleClass();
-    debugger;
     let path : any = e.currentTarget.attributes?.getNamedItem('href')?.nodeValue != null 
       ? e.currentTarget.attributes?.getNamedItem('href')?.nodeValue : 
       "/";
